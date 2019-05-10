@@ -42,6 +42,14 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
+    -Window/Global Binding : when in the global scope the value of this will be the window object
+
+    -Implicit Binding : when a function is called with a presiding dot (.) this will be the object before the dot
+
+    -New Binding : when ever a constructor function is used this refers to the instance of that class or function
+
+    -Exolicit Binding : when ever call, apply, bind are used this can be explicitly defined
+
 5. Why do we need super() in an extended class?
 
     when we extend a Class we use super to have access to the properties of that class.
