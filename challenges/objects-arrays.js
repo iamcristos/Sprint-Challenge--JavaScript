@@ -74,8 +74,8 @@ Once you have the new array created, sort the universities alphabetically and lo
 const universities = [];
 for (let i =0; i<graduates.length; i++) {
   universities.push(graduates[i].university);
-   universities.sort()
 }
+universities.sort();
 console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -88,7 +88,6 @@ const contactInfo = [];
 
 for (let i =0; i<graduates.length; i++) {
   contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
-   contactInfo.sort()
 }
 
 console.log(contactInfo);
@@ -127,7 +126,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-zooAnimals.forEach(animal => animalNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`))
+zooAnimals.forEach(animal =>animalNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`));
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -136,8 +135,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
-zooAnimals.map(animal => lowerCase.push(((animal.animal_name).toLowerCase())))
+const lowerCase = zooAnimals.map(animal => (animal.animal_name).toLowerCase());
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
